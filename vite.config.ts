@@ -7,6 +7,20 @@ import tailwind from '@tailwindcss/vite';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwind()],
+
+  build: {
+    rolldownOptions: {
+      output: {
+        advancedChunks: {
+          groups: [
+            { name: 'rt-extensions', test: /@tiptap\/extension-.*/ },
+            { name: 'rt', test: /@tiptap\/(core|pm|vue-3)/ },
+          ],
+        },
+      },
+    },
+  },
+
   resolve: {
     alias: {
       '@': fileURLToPath(import.meta.resolve('./src')),
