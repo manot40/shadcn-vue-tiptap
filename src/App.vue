@@ -32,9 +32,9 @@ const mark = createMarkModel(editor, RICHTEXT_ACTION.MARK);
 
 <template>
   <div class="grid place-content-center h-dvh">
-    <div class="max-w-3xl mx-auto w-screen">
-      <Card class="size-full aspect-video p-0 gap-3">
-        <CardHeader class="flex gap-3 p-2.5 pb-0">
+    <div class="max-w-3xl mx-auto w-screen px-4">
+      <Card class="size-full max-md:h-[50dvh] md:aspect-video p-0 gap-3">
+        <CardHeader class="flex gap-3 p-2.5 pb-0 max-md:overflow-auto">
           <TextStyle :editor />
           <TextFormat :editor />
           <ToggleGroup v-model="mark" type="multiple" variant="outline">
