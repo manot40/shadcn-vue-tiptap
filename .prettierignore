@@ -1,0 +1,14 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Ignore CI configurations
+deployment
+docker-compose.yml
+
+# etc
+graphql

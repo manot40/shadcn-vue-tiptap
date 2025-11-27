@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ui/*": ["./ui/*"],
+      "@lib/*": ["./lib/*"],
+      "@registry/*": ["./registry/*"]
+    }
+  }
+}
